@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Disponibilidad de localStorage</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <section>
+        <article>
+            <span id="webStorageStoredText"></span>
+            <br />
+            <label for="webStorageInput">Ingrese el dato:</label>
+            <input type="text" id="webStorageInput" name="webStorageInput" /><br />
+            <input type="button" id="webStorageSaveBtn" value="Guardar" />
+            <input type="button" id="clearWebStorage" value="Borrar" />
+            <span id="notCompatibleMsg" style="color:#CC0000; display:none;">
+                Desafortunadamente, tu navegador no tiene soporte para almacenamiento
+                local.</span>
+            <span id="isCompatibleMsg" style="color:#009900; display:none;">
+                ¡Felicidades, tu navegador soporta almacenamiento local!</span>
+        </article>
+    </section>
+    <script src="savelocalstorage.js"></script>
+</body>
+
+</html>

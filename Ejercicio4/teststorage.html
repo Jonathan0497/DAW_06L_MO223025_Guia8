@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prueba de almacenamiento local</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min
+.js"></script>
+    <script src="appform.js"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row mt-2 mb-4">
+            <div class="col-1"></div>
+            <div class="col">
+                <form name="regestryform">
+                    <fieldset class="border p-2" id="myform">
+                        <legend class="w-auto">Datos personales</legend>
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="(Su nombre)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Edad:</label>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="number" class="form-control" name="age" id="age" placeholder="(Su edad)" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="button" class="btn btn-primary" id="add" value="Añadir"
+                                onclick="Javascript:save()">
+                            <input type="button" class="btn btn-primary" id="get" value="Obtener"
+                                onclick="Javascript:obtain()">
+                            <input type="button" class="btn btn-primary" id="del" value="Remover"
+                                onclick="Javascript:remove()">
+                            <input type="button" class="btn btn-primary" id="clear" value="Limpiar"
+                                onclick="Javascript:clearStorage()">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" class="btn btn-primary" id="saveC" value="Guardar dato complejo"
+                                onclick="Javascript:saveComplexData()">
+                            <input type="button" class="btn btn-primary" id="restoreC" value="Restaurar dato complejo"
+                                onclick="Javascript:restoreComplexData()">
+                            <input type="button" class="btn btn-primary" id="sArray" value="Guardar arreglo"
+                                onclick="Javascript:saveArrayData()">
+                            <input type="button" class="btn btn-primary" id="rArray" value="Restaurar arreglo"
+                                onclick="Javascript:restoreArrayData()">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col bg bg-primary text-white border border-dark rounded" id="state"></div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</body>
+
+</html>
